@@ -1,0 +1,13 @@
+{
+  "name": "reactive-ref-federated",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:ui": "npm run dev --workspace=ui",
+    "build:test-vue": "npm run build --workspace=test-vue",
+    "preview:test-vue": "npm run preview --workspace=test-vue"
+  },
+  "workspaces": [
+    "packages/ui",
+    "packages/test-vue"
+  ]
+}
