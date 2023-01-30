@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [
     vue(),
     federation({
-      name: "cc-mfe-test-vue",
+      name: "mfe-test-vue",
       filename: "remoteEntry.js",
       // Modules to expose
       exposes: {
