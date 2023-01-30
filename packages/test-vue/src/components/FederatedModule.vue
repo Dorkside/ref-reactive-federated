@@ -4,8 +4,11 @@ import { ref, reactive } from "vue";
 const state = reactive({ count: 0 });
 const countRef = ref(0);
 
-setInterval(() => (state.count += 1), 1000);
-setInterval(() => (countRef.value += 1), 1000);
+setInterval(() => {
+  state.count += 1;
+  countRef.value += 1;
+  console.log(state, countRef);
+}, 1000);
 </script>
 <template>
   <main>
