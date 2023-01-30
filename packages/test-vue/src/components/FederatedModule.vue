@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, getCurrentInstance } from "vue";
+import { ref, reactive, getCurrentInstance, onMounted } from "vue";
 
 const state = reactive({ count: 0 });
 const countRef = ref(0);
@@ -11,6 +11,10 @@ setInterval(() => {
 }, 1000);
 
 console.log("Vue instance", getCurrentInstance());
+
+onMounted(() => {
+  console.log("onMounted");
+});
 </script>
 <template>
   <main>
